@@ -1,5 +1,5 @@
 async function getData(title , type){
-    const data = await fetch(`http://www.omdbapi.com/?${type}=${title}&apikey=1c41a392`);
+    const data = await fetch(`https://www.omdbapi.com/?${type}=${title}&apikey=1c41a392`);
     const jData = await data.json();
     return jData;
 }
